@@ -9,13 +9,14 @@
 		
 		function __construct()
 		{
-			echo "hello";
-			die();
+			if(isset($_POST['action']) AND $_POST['action'] == 'checkInfo'){
+				$countrySelect=mysql_real_escape_string($_POST['option1']);
+			}
 			header("Location: index.php");
 		}
 	}
 
-	$country1=new countryInfo();
+	$country1=new Process();
 
 
 

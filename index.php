@@ -41,7 +41,7 @@ This will allow all the data you query and return from the database to be nicely
 			echo "<option value='".$value['Code']."'>".$value['Name']."</option>";
 		}
 		echo "</select>
-			<input type = 'submit' value = 'check info'>
+			<input type = 'submit' value = 'checkInfo'>
 		</form>";
 		
 
